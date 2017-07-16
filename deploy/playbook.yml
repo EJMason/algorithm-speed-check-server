@@ -1,0 +1,5 @@
+- hosts: all
+  become: true # run commands with sudo
+  roles:
+  - basic
+  - project

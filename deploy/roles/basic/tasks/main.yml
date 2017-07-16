@@ -1,0 +1,12 @@
+- name: "Update and upgrade apt packages"
+  apt:
+    update_cache: yes
+
+- name: "Installing Git"
+  apt: pkg=git state=installed
+
+- name: "Installing yarn"
+  apt: pkg=yarn state=installed
+# how can I install node?
+
+

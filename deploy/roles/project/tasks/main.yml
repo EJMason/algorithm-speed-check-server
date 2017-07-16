@@ -1,0 +1,21 @@
+- name: "Get files from git repository on github"
+  git:
+      repo: "https://github.com/EJMason/algorithm-speed-check-server.git"
+      dest: /var/www/algorithm-speed-check
+      version: deploy
+
+- name: "Copy Server .env keys to virtual machine"
+  copy:
+    src: /Users/ejm/Documents/Software Engineering/Projects/algorithm-speed-check-server/.env
+    dest: /var/www/drama-bomb/.env
+
+- name: "Copy nginx.conf to correct location"
+  copy:
+    src: /Users/ejm/Desktop/drama-bomb/nginx.conf
+    dest: /etc/nginx/nginx.conf
+
+- name: "Put production build on virtual machine"
+  copy:
+    src: /Users/ejm/Desktop/drama-bomb/client/build
+    dest: /var/www/drama-bomb/server
+

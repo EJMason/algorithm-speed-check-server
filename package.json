@@ -7,6 +7,7 @@
   "author": "EJMason <eliotjunior@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "precommit": "lint-staged",
     "start": "nodemon dist/server.js",
     "build-ts": "tsc"
   },
