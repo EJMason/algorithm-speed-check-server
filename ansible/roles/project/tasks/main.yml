@@ -6,16 +6,13 @@
 
 - name: "Copy Server .env keys to virtual machine"
   copy:
-    src: /Users/ejm/Documents/Software Engineering/Projects/algorithm-speed-check-server/.env
-    dest: /var/www/drama-bomb/.env
+    src: /Users/ejm/Documents/code/Projects/algorithm-speed-check-server/.env
+    dest: /var/www/algorithm-speed-check/.env
 
 - name: "Copy nginx.conf to correct location"
   copy:
-    src: /Users/ejm/Desktop/drama-bomb/nginx.conf
+    src: /Users/ejm/Documents/code/Projects/algorithm-speed-check-server/nginx.conf
     dest: /etc/nginx/nginx.conf
 
-- name: "Put production build on virtual machine"
-  copy:
-    src: /Users/ejm/Desktop/drama-bomb/client/build
-    dest: /var/www/drama-bomb/server
+
 
