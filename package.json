@@ -1,0 +1,13 @@
+{
+  "name": "algorithm-speed-check-server",
+  "version": "1.0.0",
+  "description": "Server files for app",
+  "main": "server.js",
+  "repository": "https://github.com/EJMason/algorithm-speed-check-server.git",
+  "author": "EJMason <eliotjunior@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.0.36",
+    "express": "^4.15.3"
+  }
+}
